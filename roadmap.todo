@@ -61,6 +61,13 @@ Fase 1 - Funções dentro do arquivo UsuariosServices.js:
         Essa função recebe um array de usuários como parâmetro
         Essa função não retorna nada
 
+        const usuarios = require('../databases/Usuarios.json')
+
+        usuarios.salvar(nome)
+
+        - receber informação a ser salva
+        - escrever o arquivo com a informação recebida
+
     
     [] Função cadastrar:
 
@@ -87,6 +94,15 @@ Fase 1 - Funções dentro do arquivo UsuariosServices.js:
         O id do novo usuário deve ser único.
         A senha do usuário deve ser armazenada criptografada.
 
+        - pegar o dado do usuario
+        - checa se usuario existe
+            - se existir: envia uma mensagem que já existe
+            - se não existir:
+                - gerar um novo id
+                - adicionar campo de forma de pagamento
+                - criptografar senha
+                - O endereço deve ser um array
+                - salva novo usuário
 
 
     [] Função detalhar:
